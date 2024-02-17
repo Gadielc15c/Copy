@@ -1,0 +1,164 @@
+:root {
+  --Principal: rgba(245, 167, 37, 1);
+  --Secundario: rgb(190, 130, 27);
+  --Blanco: #ffffff;
+  --Gris: #dbdada;
+  --Bolas: #07316b;
+  --negro: #39393a;
+}
+.contLots {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  position: relative;
+
+  width: 450px;
+  box-shadow: -2px 12px 39px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 12px 39px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 12px 39px -6px rgba(0, 0, 0, 0.75);
+}
+
+.contLots2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+.contLots1 {
+  flex-direction: column;
+  background-color: var(--Principal);
+}
+.bola1 {
+  background: #ebf1f6;
+  background: -moz-linear-gradient(
+    -45deg,
+    #ebf1f6 0%,
+    #abd3ee 50%,
+    #89c3eb 51%,
+    #d5ebfb 100%
+  );
+
+  text-align: center;
+  color: var(--Bolas);
+  line-height: 45px;
+  font-size: 22px;
+  width: 45px;
+  margin: 2px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.bolalose {
+  background: #ebf1f6;
+  background: -moz-linear-gradient(
+    -45deg,
+    #ebf1f6 0%,
+    #eeabab 50%,
+    #eb8989 51%,
+    #d5ebfb 100%
+  );
+  border: 3px solid #a90909;
+  text-align: center;
+  color: var(--Bolas);
+  line-height: 45px;
+  font-size: 22px;
+  width: 49px;
+  margin: 4px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.bola2win {
+  background: #ebf1f6;
+  background: -moz-linear-gradient(
+    -45deg,
+    #ebf1f6 0%,
+    #86fd9a 50%,
+    #25fd4d 51%,
+    #d5ebfb 100%
+  );
+
+  text-align: center;
+  color: var(--Bolas);
+  line-height: 45px;
+  font-size: 22px;
+  width: 49px;
+  margin: 4px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #09a92d;
+}
+.bolasConten {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 20px;
+  align-content: center;
+}
+.lotsDate {
+  color: var(--Blanco);
+  background-color: var(--Principal);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.imgLots {
+  height: 70px;
+  width: 70px;
+}
+
+.lotsnName {
+  font-size: 24px;
+  text-align: center;
+  color: var(--Blanco);
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.nomjugada {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.cuadradox {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 3%;
+  flex: 1;
+  overflow: scroll;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  color: var(--Principal);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/*css darkmode*/
+body.dark .imgLots{
+  background-color: rgb(255, 255, 255);
+}
+body.dark .cuadradox {
+  background-color: var(--negro);
+}
+body.dark .nomjugada{
+  color: rgb(255, 255, 255);
+}
